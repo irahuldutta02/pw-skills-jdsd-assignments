@@ -1,5 +1,7 @@
 # pw-skills-jdsd-assignments
 
 ### computer-basics-assignment
-- [here](computer-basics-assignment/computer-basics-assignment.pdf)
+- [Here](computer-basics-assignment/computer-basics-assignment.pdf)
  
+### git-and-github-assignment-day-3
+- [Here](git-and-github-assignment-day-3/git-github-assignment-day-3.pdf)
