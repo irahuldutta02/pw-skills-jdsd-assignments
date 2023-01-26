@@ -11,3 +11,8 @@
 ## day-004-git-github-assignment
 
 - [Here](day-004-git-github-assignment/day-004-git-github-assignment.pdf)
+
+
+## day-006-fundamentals-of -java
+
+- [Here](day-006-fundamentals-of%20-java/day-006-fundamentals-of%20-java.pdf)
