@@ -2,8 +2,10 @@
 
 public class Question_07 {
 
+
   public static void main(String args[]) {
     String s = "Hello, have a good day";
+    String s1 = "";
     for (int i = 0; i < s.length(); i++) {
       if (
         s.charAt(i) == 'a' ||
@@ -18,10 +20,11 @@ public class Question_07 {
         s.charAt(i) == 'u' ||
         s.charAt(i) == ' '
       ) {
-        System.out.print(s.charAt(i));
+        s1 = s1+s.charAt(i);
       } else {
         continue;
       }
     }
+    System.err.println(s1);
   }
 }
