@@ -5,8 +5,15 @@
 
 ---
 
-### [000-assignments](https://github.com/irahuldutta02/pw-skills-jdsd-assignments/tree/main/000-assignments)
+### 000-assignments
+- All assignments done in pdf
+- [View All](https://github.com/irahuldutta02/pw-skills-jdsd-assignments/tree/main/000-assignments)
 
-### [001-basic-hospital-management-system](https://github.com/irahuldutta02/pw-skills-jdsd-assignments/tree/main/001-basic-hospital-management-system)
+### 001-basic-hospital-management-system
+- console app using `java`
+- [Code](https://github.com/irahuldutta02/pw-skills-jdsd-assignments/tree/main/001-basic-hospital-management-system)
+- [Download](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/irahuldutta02/pw-skills-jdsd-assignments/tree/main/001-basic-hospital-management-system)
 
-### [030-complexity-analysis-and-array-assignment](https://github.com/irahuldutta02/pw-skills-jdsd-assignments/tree/main/030-complexity-analysis-and-array-assignment)
+### 030-complexity-analysis-and-array-assignment
+- [Code](https://github.com/irahuldutta02/pw-skills-jdsd-assignments/tree/main/030-complexity-analysis-and-array-assignment)
+- [Download](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/irahuldutta02/pw-skills-jdsd-assignments/tree/main/030-complexity-analysis-and-array-assignment)
