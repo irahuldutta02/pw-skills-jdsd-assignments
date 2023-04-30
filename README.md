@@ -5,9 +5,9 @@
 
 ---
 
-### 000-assignments
+### 000-pdf-assignments
 - All assignments done in pdf
-- [View All](https://github.com/irahuldutta02/pw-skills-jdsd-assignments/tree/main/000-assignments)
+- [View All](https://github.com/irahuldutta02/pw-skills-jdsd-assignments/tree/main/000-pdf-assignments)
 
 ### 001-basic-hospital-management-system
 - console app using `java`
