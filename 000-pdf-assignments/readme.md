@@ -1,5 +1,3 @@
-# 030-complexity-analysis-and-array-assignment
-
 ### Profile Links : [rahuldutta.bio.link](https://rahuldutta.bio.link)
 
 ---
