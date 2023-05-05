@@ -238,3 +238,8 @@ __Answer :__
     Output 1: 7
 
 __Answer :__
+
+
+
+## **3. 2D Array**
+---
