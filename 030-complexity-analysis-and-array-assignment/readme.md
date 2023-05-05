@@ -244,12 +244,29 @@ __Answer :__
 ## **3. 2D Array**
 ---
 
-<img src="https://user-images.githubusercontent.com/78687135/236384987-9edb6f39-50f0-461d-86cf-ab88cf023f50.png" alt="question-1" width="50%">
+<!-- question-1 -->
+<img src="https://user-images.githubusercontent.com/78687135/236384987-9edb6f39-50f0-461d-86cf-ab88cf023f50.png" alt="question-1" width="90%">
 
-![question-2](https://user-images.githubusercontent.com/78687135/236385049-a3fb38a4-d59a-423b-8bf7-d1f1f350901d.png)
+__Answer :__
 
-![question-3](https://user-images.githubusercontent.com/78687135/236385088-3e8af8d5-ceaa-4875-9300-3c9c51e4a9c0.png)
+<!-- question-2 -->
+<img src="https://user-images.githubusercontent.com/78687135/236385049-a3fb38a4-d59a-423b-8bf7-d1f1f350901d.png" alt="question-2" width="90%">
 
-![question-4](https://user-images.githubusercontent.com/78687135/236385590-73828468-02c0-4614-9c03-74e4795d7041.png)
+__Answer :__
 
-![question-5](https://user-images.githubusercontent.com/78687135/236386220-28c3620d-e6e4-4a92-9ef7-a862de351407.png)
+<!-- question-3 -->
+<img src="https://user-images.githubusercontent.com/78687135/236385088-3e8af8d5-ceaa-4875-9300-3c9c51e4a9c0.png" alt="question-2" width="90%">
+
+__Answer :__
+
+<!-- question-4 -->
+<img src="https://user-images.githubusercontent.com/78687135/236385590-73828468-02c0-4614-9c03-74e4795d7041.png" width="90%">
+
+__Answer :__
+
+
+<!-- question-5 -->
+<img src="https://user-images.githubusercontent.com/78687135/236386220-28c3620d-e6e4-4a92-9ef7-a862de351407.png" width="90%">
+
+__Answer :__
+
