@@ -8,7 +8,7 @@ Output 1: 6
 // time complexity : o(n)
 // space complexity : O(1)
 
-public class Section_1_Question_4 {
+public class Section_2_Question_4 {
 
   public static void getSecondLargest(int[] arr) {
     int largest = Integer.MIN_VALUE;

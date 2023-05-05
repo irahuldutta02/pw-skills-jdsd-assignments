@@ -8,7 +8,7 @@ Output 1: 6
 // time complexity : o(n)
 // space complexity : O(1)
 
-public class Section_1_Question_5 {
+public class Section_2_Question_5 {
 
   public static void findPeakElement(int[] arr) {
     for (int i = 1; i < arr.length - 1; i++) {

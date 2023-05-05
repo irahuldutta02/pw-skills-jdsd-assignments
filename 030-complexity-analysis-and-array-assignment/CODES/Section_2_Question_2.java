@@ -8,7 +8,7 @@ Output 1: 4 6
 // time complexity : o(n)
 // space complexity : O(1)
 
-public class Section_1_Question_2 {
+public class Section_2_Question_2 {
 
   public static void printEvenElement(int[] arr) {
     System.out.print("All even elements are : ");

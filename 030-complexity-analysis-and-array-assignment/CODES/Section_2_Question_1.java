@@ -9,7 +9,7 @@ Output 1: 11
 // time complexity : O(n)
 // space complexity : O(1)
 
-public class Section_1_Question_1 {
+public class Section_2_Question_1 {
 
   public static void evenIndexSumOfArray(int[] arr) {
     int n = arr.length;

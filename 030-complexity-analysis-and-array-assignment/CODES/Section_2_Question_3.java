@@ -8,7 +8,7 @@ Output 1: 7
 // time complexity : o(n)
 // space complexity : O(1)
 
-public class Section_1_Question_3 {
+public class Section_2_Question_3 {
 
   public static void getMaxElement(int[] arr) {
     int max = Integer.MIN_VALUE;
