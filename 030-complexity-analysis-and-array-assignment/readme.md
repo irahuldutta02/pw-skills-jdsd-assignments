@@ -1,6 +1,6 @@
 ### Profile Links : [rahuldutta.bio.link](https://rahuldutta.bio.link)
 ---
-## **Time and space complexity**
+## **1. Time and space complexity**
 ---
 
 **Question 1 :** 
@@ -181,3 +181,60 @@ This is a geometric series with a = K and r = 2, and the number of terms is log 
 = K * (2^n - n) / (2^(n-1))
 
 Therefore, the solution to the recurrence relation T(n) = 2T(n/2) + K using the recursion tree method is T(n) = Θ(n + K * log n).
+
+## **2. 1D Array**
+---
+**Q1:**
+-
+### Write a program to print the sum of all the elements present on even indices in the given array.
+
+    Input 1: arr[] = {3,20,4,6,9}
+    Output 1: 16
+    Input 1: arr[] = {4,3,6,7,1}
+    Output 1: 11
+
+__Answer :__
+
+**Q2:**
+-
+### Write a program to traverse over the elements of the array using for each loop and print all even elements.
+
+    Input 1: arr[] = {34,21,54,65,43}
+    Output 1: 34 54
+    Input 1: arr[] = {4,3,6,7,1}
+    Output 1: 4 6
+
+__Answer :__
+
+**Q3:**
+- 
+### Write a program to calculate the maximum element in the array.
+
+    Input 1: arr[] = {34,21,54,65,43}
+    Output 1: 65
+    Input 1: arr[] = {4,3,6,7,1}
+    Output 1: 7
+
+__Answer :__
+
+**Q4:** 
+-
+### Write a program to find out the second largest element in a given array.
+
+    Input 1: arr[] = {34,21,54,65,43}
+    Output 1: 54
+    Input 1: arr[] = {4,3,6,7,1}
+    Output 1: 6
+
+__Answer :__
+
+**Q5:** 
+-
+### Given an array. Find the first peak element in the array. A peak element is an element that is greater than its just left and just right neighbor.
+
+    Input 1: arr[] = {1,3,2,6,5}
+    Output 1: 6
+    Input 2: arr[] = {1 4,7,3,2,6,5}
+    Output 1: 7
+
+__Answer :__
