@@ -37,3 +37,10 @@ public class Section_1_Question_1 {
     evenIndexSumOfArray(arr2);
   }
 }
+
+/*
+Output :
+Sum of all the elements on even indices is : 16
+Sum of all the elements on even indices is : 11
+*/
+

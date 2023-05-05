@@ -235,6 +235,13 @@ public class Section_1_Question_1 {
     evenIndexSumOfArray(arr2);
   }
 }
+
+/*
+Output :
+Sum of all the elements on even indices is : 16
+Sum of all the elements on even indices is : 11
+*/
+
 ```
 
 **Q2:**
@@ -281,7 +288,11 @@ public class Section_1_Question_2 {
     printEvenElement(arr2);
   }
 }
-
+/*
+Output :
+All even elements are : 34 54 
+All even elements are : 4 6 
+*/
 ```
 
 **Q3:**
@@ -309,7 +320,7 @@ Output 1: 7
 public class Section_1_Question_3 {
 
   public static void getMaxElement(int[] arr) {
-    int max = 0;
+    int max = Integer.MIN_VALUE;
     for (int i : arr) {
       if (i > max) {
         max = i;
@@ -328,6 +339,11 @@ public class Section_1_Question_3 {
     getMaxElement(arr2);
   }
 }
+/*
+Output :
+Max element in the array is : 65
+Max element in the array is : 7
+*/
 
 ```
 
@@ -342,18 +358,105 @@ public class Section_1_Question_3 {
 
 __Answer :__
 
+```java
+/*
+Write a program to find out the second largest element in a given array.
+Input 1: arr[] = {34,21,54,65,43}
+Output 1: 54
+Input 1: arr[] = {4,3,6,7,1}
+Output 1: 6
+*/
+// time complexity : o(n)
+// space complexity : O(1)
+
+public class Section_1_Question_4 {
+
+  public static void getSecondLargest(int[] arr) {
+    int largest = Integer.MIN_VALUE;
+    int secondLargest = Integer.MIN_VALUE;
+
+    for (int i = 0; i < arr.length; i++) {
+      if (arr[i] > largest) {
+        secondLargest = largest;
+        largest = arr[i];
+      } else if (arr[i] > secondLargest && arr[i] != largest) {
+        secondLargest = arr[i];
+      }
+    }
+    System.out.println("Second largest element in the arrayis : " + secondLargest);
+  }
+
+  // driver code
+  public static void main(String[] args) {
+    // test case - 1
+    int[] arr1 = { 34, 21, 54, 65, 43 };
+    getSecondLargest(arr1);
+
+    // test case - 2
+    int[] arr2 = { 4, 3, 6, 7, 1 };
+    getSecondLargest(arr2);
+  }
+}
+/*
+Output :
+Second largest element in the arrayis : 54
+Second largest element in the arrayis : 6
+*/
+
+```
+
 **Q5:** 
 -
 ### Given an array. Find the first peak element in the array. A peak element is an element that is greater than its just left and just right neighbor.
 
     Input 1: arr[] = {1,3,2,6,5}
+    Output 1: 3
+    Input 2: arr[] = {14,7,3,2,6,5}
     Output 1: 6
-    Input 2: arr[] = {1 4,7,3,2,6,5}
-    Output 1: 7
 
 __Answer :__
 
+```java
+/*
+Given an array. Find the first peak element in the array. A peak element is an element that is greater than its just left and just right neighbor.
+Input 1: arr[] = {1,3,2,6,5}
+Output 1: 3
+Input 2: arr[] = {14,7,3,2,6,5}
+Output 1: 6
+*/
+// time complexity : o(n)
+// space complexity : O(1)
 
+public class Section_1_Question_5 {
+
+  public static void findPeakElement(int[] arr) {
+    for (int i = 1; i < arr.length - 1; i++) {
+      if (arr[i] > arr[i - 1] && arr[i] > arr[i + 1]) {
+        System.out.println(arr[i] + " is a peak element in the array.");
+        return;
+      }
+    }
+    System.out.println("There is no peak element in the array.");
+  }
+
+  // driver code
+  public static void main(String[] args) {
+    // test case - 1
+    int[] arr = { 1, 3, 2, 6, 5 };
+    findPeakElement(arr);
+    // test case - 2
+    int[] arr2 = { 14, 7, 3, 2, 6, 5 };
+    findPeakElement(arr2);
+  }
+}
+
+/*
+Output :
+3 is a peak element in the array.
+6 is a peak element in the array.
+*/
+
+```
 
 ## **3. 2D Array**
 ---

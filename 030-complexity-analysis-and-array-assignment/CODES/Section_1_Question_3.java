@@ -11,7 +11,7 @@ Output 1: 7
 public class Section_1_Question_3 {
 
   public static void getMaxElement(int[] arr) {
-    int max = 0;
+    int max = Integer.MIN_VALUE;
     for (int i : arr) {
       if (i > max) {
         max = i;
@@ -30,3 +30,9 @@ public class Section_1_Question_3 {
     getMaxElement(arr2);
   }
 }
+
+/*
+Output :
+Max element in the array is : 65
+Max element in the array is : 7
+*/

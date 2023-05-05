@@ -30,3 +30,9 @@ public class Section_1_Question_2 {
     printEvenElement(arr2);
   }
 }
+
+/*
+Output :
+All even elements are : 34 54 
+All even elements are : 4 6 
+*/
