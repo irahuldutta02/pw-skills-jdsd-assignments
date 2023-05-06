@@ -17,19 +17,13 @@ for(int i = 1; i <= n; i++) {
 ```
 __Answer :__
 
-The time complexity of the given code is O(n^2). 
-
-The outer loop iterates n times, and for each iteration of the outer loop, the inner loop iterates i times. So, the total number of iterations of the inner loop is the sum of the first n integers, which is n*(n+1)/2.
-
-Therefore, the overall time complexity of the code is O(n*(n+1)/2), which simplifies to O(n^2).
-
-One way to improve the time complexity of the code is to use the formula for the sum of the first n integers instead of using a nested loop. The sum of the first n integers can be calculated as n*(n+1)/2. So, the code can be rewritten as:
-
-```java
-int sum = n*(n+1)/2;
-```
-
-This code has a time complexity of O(1), which is a significant improvement over the original code.
+The time complexity of this code is O(n^2) as it uses nested loops, where the outer loop runs n times and the inner
+loop runs i times where i varies from 1 to n.
+The total number of operations performed can be calculated by summing the total number of operations in each
+iteration of the outer loop. The inner loop will run i times on the i-th iteration of the outer loop. So the number of
+operations is (1+2+3+...+n) which is n(n+1)/2, which is O(n^2).
+One way to improve the time complexity of this code is to use a mathematical formula to find the sum instead of
+using nested loops.
 
 **Question 2 :**
 -
@@ -37,17 +31,20 @@ This code has a time complexity of O(1), which is a significant improvement over
 
 __Answer :__
 
-To find the value of T(2) for the recurrence relation T(n) = 3T(n-1) + 12n given that T(0) = 5, we need to apply the recurrence relation twice, starting from n = 0.
+given T(n) = 3T(n-1) + 12n
 
-First, we can find T(1) using the recurrence relation:
+Substituting the values in the relation:
 
-T(1) = 3T(0) + 12(1) = 3(5) + 12 = 27
+T(1) = 3T(0) + 12
 
-Next, we can find T(2) using the recurrence relation again:
+=> T(1) = 15 + 12 = 27
 
-T(2) = 3T(1) + 12(2) = 3(27) + 24 = 105
+T(2) = 3T(1) + 12 * 2
 
-Therefore, the value of T(2) is 105.
+=>T(2) = 3 * 27 + 24 = 81 + 24
+
+Hence T(2) = 105.
+
 
 **Question 3 :** 
 -
@@ -55,23 +52,20 @@ Therefore, the value of T(2) is 105.
 
 __Answer :__
 
-To solve the recurrence relation T(n) = T(n-1) + c using the substitution method, we need to make a guess for the solution and then prove it by mathematical induction.
-
-Let's assume that T(n) = kn + b, where k and b are constants. We will now substitute this guess into the recurrence relation and see if it holds.
-
-T(n) = T(n-1) + c
-kn + b = k(n-1) + b + c
-kn + b = kn - k + b + c
-k = c
-
-Therefore, we can conclude that k = c. 
-
-Now we can solve for b using the initial condition T(1) = a, where a is some constant.
-
-T(1) = k(1) + b = a
-b = a - c
-
-Therefore, the solution to the recurrence relation T(n) = T(n-1) + c is T(n) = cn + a - c.
+Let the solution be T(n) = O(n), now let’s prove this using the induction method.
+For that to happen T(n) <= cn where c is some constant.
+T(n) = T(n - 1) + c
+T(n - 1) = T(n - 2) + c
+T(n - 2) = T(n - 3) + c
+|
+|
+T(2) = T(1) + c
+—------------------------ Adding all above equations
+T(n) = T(1) + cn
+Let us assume T(1) to be a constant value.
+T(n) = k + cn
+Therefore, T(n) <= cn
+Hence we can conclude T(n) = O(n).
 
 **Question 4 :**
 -
@@ -79,33 +73,27 @@ Therefore, the solution to the recurrence relation T(n) = T(n-1) + c is T(n) = c
 
 __Answer :__
 
-To find the time complexity of the recurrence relation T(n) = 16T(n/4) + n^2logn using the master theorem, we need to compare the given recurrence relation with the standard form of the master theorem, which is:
+From the given recurrence relation we can obtain the value of different parameters such as a, b, p, and k.
 
-T(n) = aT(n/b) + f(n)
+Therelation: T(n)=16T(n/4)+n2logn
 
-where a is the number of subproblems, b is the size of each subproblem, and f(n) is the time complexity of the work done outside the subproblems.
+Here,a=16
 
-In the given recurrence relation, we have:
+b=4
 
-a = 16, b = 4, and f(n) = n^2logn
+k=2
 
-Now we can calculate the value of logb a:
+p=1
 
-log4 16 = 2
+bk=42=16
 
-Since f(n) = n^2logn, we can calculate the value of n^logb a:
+Herea=bk
 
-n^log4 16 = n^2
+Alsop>-1
 
-Now we can compare the two values and determine the time complexity of the recurrence relation using the master theorem:
+Hence, T(n)=θ(nlogab*logp+1n)
 
-If f(n) = O(n^k) for some constant k < logb a, then T(n) = Θ(n^logb a).
-
-If f(n) = Θ(n^k logm n) for some constants k and m, where logm n = Ω(1), then T(n) = Θ(n^k logm+1 n).
-
-If f(n) = Ω(n^k) for some constant k > logb a, and if af(n/b) ≤ cf(n) for some constant c < 1 and all sufficiently large n, then T(n) = Θ(f(n)).
-
-In our case, we have k = 2 and logb a = 2. Since k = logb a, we are in case 2 of the master theorem. Therefore, the time complexity of the recurrence relation T(n) = 16T(n/4) + n^2logn is Θ(n^2log^2n).
+Therefore, T(n)=θ(nlog164*log1+1n)=θ(n1/2log2n)
 
 **Question 5 :**
 -
