@@ -15,4 +15,4 @@
 - [Download](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/irahuldutta02/pw-skills-jdsd-assignments/tree/main/001-basic-hospital-management-system)
 
 ### 030-complexity-analysis-and-array-assignment
-- [Code](https://github.com/irahuldutta02/pw-skills-jdsd-assignments/tree/main/030-complexity-analysis-and-array-assignment)
+- [View](https://github.com/irahuldutta02/pw-skills-jdsd-assignments/tree/main/030-complexity-analysis-and-array-assignment)

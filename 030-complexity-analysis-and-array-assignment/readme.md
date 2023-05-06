@@ -580,15 +580,187 @@ Zero : 3
 
 __Answer :__
 
+```java
+/*
+Q2: write a program to print the elements above the secondary diagonal in a user inputted
+square matrix.
+Input : 
+1 2 3
+4 5 6
+7 8 9
+Output :
+1 2 4
+*/
+
+import java.util.Scanner;
+
+public class Section_3_Question_2{ 
+  public static void main(String args[]){
+    
+    int m,n;
+    Scanner sc=new Scanner(System.in);
+    System.out.print("Enter the number of rows : ");
+    m=sc.nextInt();    
+    System.out.print("Enter the number of column : ");    
+    n=sc.nextInt();
+    int arr[][]=new int[m][n];
+    
+    int i,j;    
+       
+    System.out.println("Enter the  matrix element : ");    
+    for(i = 0 ; i < m ; i++){    
+        for(j = 0 ; j < n ; j++){    
+            arr[i][j]=sc.nextInt();  
+        }    
+    }     
+    
+    System.out.print("Elements above secondary diagonal : ");    
+    for(i = 0 ; i < m ; i++){    
+        for(j = 0 ; j < n ; j++){    
+            if(i + j < m - 1)System.out.print(arr[i][j] + "  ");
+            }    
+        }  
+    }     
+}
+
+/*
+Output :
+Enter the number of rows : 3
+Enter the number of column : 3
+Enter the  matrix element : 
+1 2 3
+4 5 6
+7 8 9
+Elements above secondary diagonal : 1  2  4 
+*/
+```
+
 <!-- question-3 -->
 <img src="https://user-images.githubusercontent.com/78687135/236385088-3e8af8d5-ceaa-4875-9300-3c9c51e4a9c0.png" alt="question-2" width="90%">
 
 __Answer :__
 
+```java
+/*
+Q3: write a program to print the elements of both the diagonals in a user inputted square matrix
+in any order.
+Input : 
+1 2 3
+4 5 6
+7 8 9
+Output :
+1 3 5 7 9
+*/
+
+import java.util.Scanner;
+
+public class Section_3_Question_3 {
+
+  public static void main(String args[]) {
+    int m, n;
+    Scanner sc = new Scanner(System.in);
+    System.out.print("Enter the number of rows : ");
+    m = sc.nextInt();
+    System.out.print("Enter the number of column : ");
+    n = sc.nextInt();
+    int arr[][] = new int[m][n];
+
+    int i, j;
+
+    System.out.println("Enter the  matrix element : ");
+    for (i = 0; i < m; i++) {
+      for (j = 0; j < n; j++) {
+        arr[i][j] = sc.nextInt();
+      }
+    }
+
+    System.out.print("Elements on primary and secondary diagonals are : ");
+    for (i = 0; i < m; i++) {
+      for (j = 0; j < n; j++) {
+        if (i + j == m-1) {
+          System.out.print(arr[i][j] + "  ");
+        }
+        if (i == j) {
+          System.out.print(arr[i][j] + "  ");
+        }
+      }
+    }
+  }
+}
+/*
+Output :
+Enter the number of rows : 3
+Enter the number of column : 3
+Enter the  matrix element : 
+1 2 3
+4 5 6
+7 8 9
+Elements on primary and secondary diagonals are : 1 3 5 7 9
+*/
+
+```
+
 <!-- question-4 -->
 <img src="https://user-images.githubusercontent.com/78687135/236385590-73828468-02c0-4614-9c03-74e4795d7041.png" width="90%">
 
 __Answer :__
+
+```java
+/*
+Write a program to find the largest element of a given 2D array of integers.
+Input :
+1 2 4 0
+2 5 7 -1
+4 2 6 9
+Output :
+9
+*/
+import java.util.Scanner;
+
+public class Section_3_Question_4 {
+
+  public static void main(String args[]) {
+    int m, n;
+    Scanner sc = new Scanner(System.in);
+    System.out.print("Enter the number of rows : ");
+    m = sc.nextInt();
+    System.out.print("Enter the number of column : ");
+    n = sc.nextInt();
+    int arr[][] = new int[m][n];
+
+    int i, j;
+
+    System.out.println("Enter the  matrix element : ");
+    for (i = 0; i < m; i++) {
+      for (j = 0; j < n; j++) {
+        arr[i][j] = sc.nextInt();
+      }
+    }
+
+    int max = Integer.MIN_VALUE;
+    for (i = 0; i < m; i++) {
+      for (j = 0; j < n; j++) {
+        if (arr[i][j] > max) {
+          max = arr[i][j];
+        }
+      }
+    }
+
+    System.out.print("Max Element : " + max);
+  }
+}
+/*
+Output :
+Enter the number of rows : 3
+Enter the number of column : 3
+Enter the  matrix element : 
+1 2 4 0
+2 5 7 -1
+4 2 6 9
+Max Element : 9
+*/
+
+```
 
 
 <!-- question-5 -->
