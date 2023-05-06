@@ -47,3 +47,10 @@ public class Section_3_Question_5 {
     displayMiddleElements(arr, size);
   }
 }
+/*
+Middle row elements:
+7 6 5 4 3 
+Middle column elements:
+3 5 5 5 37 
+*/
+
